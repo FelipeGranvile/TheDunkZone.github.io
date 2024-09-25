@@ -34,7 +34,7 @@ header {
     z-index: 2;
     grid-area: header;
     justify-content: center;
-    background-color: rgba(54, 69, 79, 0.9);
+    background-color: whitesmoke;
     border-radius: 1.4rem;
     margin-top: 1rem;
     color: #f4f4f4;
