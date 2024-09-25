@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonbre nós</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/contato.css">
+
+    
+
+    <style>
+        body {
+            z-index: 2;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            overflow-x: hidden;
+        }
+
+        body::before{
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("../assets/images/2300.jpg");
+            background-repeat: repeat-y;
+            background-position: center;
+            background-size: 100% 100%;
+            filter: blur(40px);
+            z-index: -1; /* Coloca o background atrás do conteúdo */
+        }
+
+
+        #chose{
+            color: #FF7518;
+            text-shadow:
+             -3px -3px 0px #000,
+             -3px -2px 0px #000,
+             -3px -1px 0px #000,
+             -3px 0px 0px #000,
+             -3px 1px 0px #000,
+             -3px 2px 0px #000,
+             -3px 3px 0px #000,
+             -2px -3px 0px #000,
+             -2px -2px 0px #000,
+             -2px -1px 0px #000,
+             -2px 0px 0px #000,
+             -2px 1px 0px #000,
+             -2px 2px 0px #000,
+             -2px 3px 0px #000,
+             -1px -3px 0px #000,
+             -1px -2px 0px #000,
+             -1px -1px 0px #000,
+             -1px 0px 0px #000,
+             -1px 1px 0px #000,
+             -1px 2px 0px #000,
+             -1px 3px 0px #000,
+             0px -3px 0px #000,
+             0px -2px 0px #000,
+             0px -1px 0px #000,
+             0px 0px 0px #000,
+             0px 1px 0px #000,
+             0px 2px 0px #000,
+             0px 3px 0px #000,
+             1px -3px 0px #000,
+             1px -2px 0px #000,
+             1px -1px 0px #000,
+             1px 0px 0px #000,
+             1px 1px 0px #000,
+             1px 2px 0px #000,
+             1px 3px 0px #000,
+             2px -3px 0px #000,
+             2px -2px 0px #000,
+             2px -1px 0px #000,
+             2px 0px 0px #000,
+             2px 1px 0px #000,
+             2px 2px 0px #000,
+             2px 3px 0px #000,
+             3px -3px 0px #000,
+             3px -2px 0px #000,
+             3px -1px 0px #000,
+             3px 0px 0px #000,
+             3px 1px 0px #000,
+             3px 2px 0px #000,
+             3px 3px 0px #000;
+             font-size: 3rem;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <header>
+            <nav class="nav-bar">
+                <div class="options"><a href="../index.html">Home</a></li></div>
+                <div class="options" ><a href="contato.html" id="chose">Contato</a></div>
+                <div class="options"><a href="sobre.html" >Sobre</a></div>
+                <div class="options"><a href="servicos.html">Servicos</a></div>
+                <div class="options"><a href="noticias.html">Noticias</a></div>
+                <div class="options"><a href="galeria.html">Galeria</a></div>
+            </nav>
+        </header>
+        <div class="formulario">
+            <form action="" method="post">
+                <h1>Converse com a nossa equipe</h1>
+                <div class="campos">
+                    <label for="nome">Insira neu nome completo:</label><br>
+                    <input type="text" id="nome" required style="text-align: center;" placeholder="Felipe Granvile">
+                </div>
+                <div class="campos">
+                    <label for="email">Insira seu email (valido)*:</label><br>
+                    <input type="email" id="email" required style="text-align: center;" placeholder="exemplo teste@gmail.com">
+                </div>
+                <div class="campos">
+                    <label for="telefone">Insira seu email (valido)*:</label><br>
+                    <input type="text" id="telefone" placeholder="(00) 00000-0000" maxlength="15" required style="text-align: center;">
+                </div>
+                <div class="campos">
+                    <label for="telefone">Qual é o seu problema?*</label><br>
+                    <select name="problemas" id="problemas">
+                        <option value=""></option>
+                        <option value="erro404">Erros 404 (página não encontrada)</option>
+                        <option value="tempodecarregamento">Lento tempo de carregamento</option>
+                        <option value="linksquebrados">Links quebrados</option>
+                        <option value="noticias">Noticias Desuatilizadas ou falsas</option>
+                        <option value="compatibilidade">Problemas de compatibilidade com navegadores</option>
+                        <option value="dicas">Dicas para melhorar o site</option>
+                    </select>
+                </div>
+                <div class="campos">
+                    <label for="descricao">Descreve oque está acontecendo:</label><br>
+                    <textarea name="descricao" id="descricao" placeholder="Escreva aqui" style="resize: none;"></textarea>
+                </div>
+                
+                <div class="campos">
+                    <label for="descricao" id="boxes-tittle">Deseja receber a resposta por quais meios de comunicação?*</label><br>
+                </div>
+
+                <div class="campos" id="boxes">
+                    <div class="caixas">
+                        <input type="checkbox" name="rede" value="whatsapp" id="whatsapp">                        
+                        <input type="checkbox" name="rede" value="SMS" id="SMS">
+                        <input type="checkbox" name="rede" value="Email" id="email">
+                    </div>
+
+                    <div class="nomes">
+                        <label for="WhatsApp">WhatsApp</label>
+                        <label for="SMS">SMS</label>
+                        <label for="Email">Email</label>
+                    </div>
+                    <div class="redes">
+                        <img src="../assets/images/WhatsApp.png" alt="whatsapp">
+                        <img src="../assets/images/SMS.png" alt="SMS">
+                        <img src="../assets/images/Email.png" alt="email">
+                    </div>
+                </div>
+
+
+
+                <div id="button">
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </form>
+        </div>
+        
+
+        <footer class="footer">
+            <p><a href="/pages/contato.html">Contato</a></p>
+            <p>&copy; 2024 The Dunk Zone. Todos os direitos reservados</p>
+            <p><a href="/pages/sobre.html">Sobre nós</a></p>
+        </footer>
+        
+    
+    </div>
+
+    <script>
+        document.getElementById('telefone').addEventListener('input', function (e) {
+            let value = e.target.value
+            .replace(/\D/g, '') // Remove caracteres não numéricos
+            .replace(/^(\d{2})(\d)/, '($1) $2') // Formata DDD
+            .replace(/(\d)(\d{4})$/, '$1-$2'); // Adiciona o hífen
+
+            e.target.value = value;
+        });
+
+    </script>
+</body>
+</html>

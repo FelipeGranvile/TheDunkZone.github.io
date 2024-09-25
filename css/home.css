@@ -1,3 +1,4 @@
+/*
 @font-face {
     font-family: Protest_revolution;
     src: url("../assets/fonts/Protest_Revolution/Protest_Revolution/ProtestRevolution-Regular.ttf");
@@ -12,12 +13,31 @@
     font-family: Poetsen_one;
     src: url("../assets/fonts/Protest_Revolution/Protest_Revolution/ProtestRevolution-Regular.ttf");
 }
+*/
 
+@font-face {
+    font-family: Protest_revolution;
+    src: url("/assets/fonts/Protest_Revolution/Protest_Revolution/ProtestRevolution-Regular.ttf");
+}
+
+@font-face {
+    font-family: Poller_one;
+    src: url("/assets/fonts/Protest_Revolution/Protest_Revolution/ProtestRevolution-Regular.ttf");
+}
+
+@font-face {
+    font-family: Poetsen_one;
+    src: url("/assets/fonts/Protest_Revolution/Protest_Revolution/ProtestRevolution-Regular.ttf");
+}
 
 :root{
 
     font-size: 15px;
+
+
 }
+
+
 
 @media (max-width: 768px) {
     :root {
@@ -32,7 +52,9 @@
 }
 
 #container{
-    font-family: Poetsen_one;
+
+   
+    font-family: Poetsen_one !important;
     display: grid;
     grid-template-areas: 
     "header"
@@ -48,6 +70,7 @@
 }
 
 header {
+    font-family: Poetsen_one;
     grid-area: header;
     justify-content: center;
     background-color: rgba(54, 69, 79, 0.9);
@@ -82,6 +105,7 @@ header::after{
     }
 }
 .nav-bar{
+    font-family: Poetsen_one;
     font-size: 200%;
     display: grid; /* mudar de display: contents para display: grid */
     grid-template-columns: repeat(6, 1fr); /* create 6 columns with equal width */
@@ -91,6 +115,7 @@ header::after{
 }
 
 .options{
+    font-family: Poetsen_one;
     transition: all 0.7s ease-in-out;
     display: grid; /* make each option a grid cell */
     justify-items: center; /* center the text within each cell */
@@ -98,17 +123,20 @@ header::after{
 }
 
 .options a{
+    font-family: Poetsen_one;
     text-decoration: none;
     color: #f4f4f4;
 }
 
 
 #chose:hover{
+    font-family: Poetsen_one;
     transform: translateY(-3px);
     animation: pulse 2s infinite;
 }
 
 .options:hover{
+    font-family: Poetsen_one;
     transform: translateY(-3px); /* faça a div subir um pouco */
     font-size: 1.1em; /* aumente o tamanho do texto */
     border: 3px solid orange; /* adicione uma borda laranja */
@@ -116,6 +144,7 @@ header::after{
 }
 
 .content{
+    font-family: Poetsen_one;
     grid-area: main;
     display: flex;
     flex-direction: column;
@@ -174,7 +203,7 @@ header::after{
     text-align: center;
     color: #000000;
     border-radius: 35px;
-    font-family: Protest_Revolution;
+    font-family: Protest_revolution;
     font-size: 4rem;
     width: 50%;
     padding: 1.5rem;
@@ -220,3 +249,4 @@ footer a{
       border-color: orange;
     }
 }
+

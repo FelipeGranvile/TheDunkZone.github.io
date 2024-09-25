@@ -1,0 +1,318 @@
+@font-face {
+    font-family: Protest_revolution;
+    src: url("../assets/fonts/Protest_Revolution/Protest_Revolution/ProtestRevolution-Regular.ttf");
+}
+
+@font-face {
+    font-family: Poller_one;
+    src: url("../assets/fonts/Poller_One/PollerOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: Poetsen_one;
+    src: url("../assets/fonts/Poetsen_One/Poetsen_One/PoetsenOne-Regular.ttf");
+}
+
+
+
+:root{
+
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    :root {
+      font-size: 7px;
+    }
+}
+
+#container{
+    z-index: 2;
+    font-family: Poetsen_one;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "contato"
+    "footer";
+
+    grid-template-columns: 80%;
+    grid-template-rows: 10vh 1fr auto; /* aumentar o tamanho do header */
+
+    height: 95vh;
+    justify-content: center;
+    gap: 10px;
+
+
+}
+
+header {
+    z-index: 2;
+    grid-area: header;
+    justify-content: center;
+    background-color: rgba(54, 69, 79, 0.9);
+    border-radius: 1.4rem;
+    margin-top: 1rem;
+    color: #f4f4f4;
+    filter: drop-shadow(0 6px 10px black);
+}
+
+header::before{
+    content: " ";
+    width: 10px;
+    position: absolute;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-left: 8%;
+    transform: translateY(-20px);
+}
+header::after{
+    margin-left: 90%;
+    content: " ";
+    width: 10px;
+    position: absolute;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: translateY(-5.7rem);  
+}
+
+@media (max-width: 768px){
+    header::after{
+        height: 1.4rem;
+    }
+}
+.nav-bar{
+    font-size: 200%;
+    display: grid; /* mudar de display: contents para display: grid */
+    grid-template-columns: repeat(6, 1fr); /* create 6 columns with equal width */
+    grid-auto-columns: 1fr; /* manter a largura das colunas */
+    justify-items: center; /* centralizar os elementos .options */
+    align-items: center; /* centralizar os elementos .options verticalmente */
+}
+
+.options{
+    transition: all 0.7s ease-in-out;
+    display: grid; /* make each option a grid cell */
+    justify-items: center; /* center the text within each cell */
+    margin-top: 0.8rem;
+    font-family: Protest_revolution;
+}
+
+.options a{
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+
+#chose:hover{
+    transform: translateY(-3px);
+    animation: pulse 2s infinite;
+}
+
+.options:hover{
+    transform: translateY(-3px); /* faça a div subir um pouco */
+    font-size: 1.1em; /* aumente o tamanho do texto */
+    border: 3px solid orange; /* adicione uma borda laranja */
+    animation: pulse 2s infinite; /* adicione uma animação de pulsação */
+}
+
+.formulario{
+    grid-area:contato;
+    
+    all: unset;
+    z-index: 2;
+    display: grid;
+
+    grid-template-columns: 80%;
+    grid-template-rows: repeat(9, auto);
+
+    justify-content: center;
+    width: 50%;
+    justify-self: center;
+
+    margin-top: 2rem;
+
+
+    background: rgba(54, 69, 79, 0.69);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.8px);
+    -webkit-backdrop-filter: blur(9.8px);
+    border: 1px solid rgba(54, 69, 79, 0.25);
+
+    
+    box-shadow: -2px 32px 58px -14px rgba(0,0,0,0.64);
+    -webkit-box-shadow: -2px 32px 58px -14px rgba(0,0,0,0.64);
+    -moz-box-shadow: -2px 32px 58px -14px rgba(0,0,0,0.64);
+
+}
+
+.formulario h1{
+    grid-row: 1;
+    font-family: Protest_revolution;
+    font-size: 4rem;
+    text-align: center;
+    justify-content: center;
+    color: #FF7518;
+}
+
+.campos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: whitesmoke;
+    font-family: Poetsen_one;
+    font-size: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+
+
+    
+}
+
+
+.campos input {
+    font-family: Poetsen_one;
+    border: none;
+    width: 80%;
+    height: 3rem;
+    font-size: 1.3rem;
+    background-color: #91ACC4;
+    border-radius: 15px;
+}
+
+select {
+    font-family: Poetsen_one;
+    width: 80%;
+    height: 3rem;
+    font-size: 1.3rem;
+    background-color: #91ACC4;
+    border-radius: 15px;
+    
+}
+
+
+
+#button{
+    margin-bottom: 2rem;
+}
+
+input[type="checkbox"]{
+    background-color: #ffffff;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0;
+    pointer-events: all;
+
+}
+
+#boxes {
+
+    display: grid;
+    grid-template-areas: 
+    "checkbox" "nomes" "redes";
+
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+
+    width: 20rem;
+    padding: 1rem;
+    background-color: #91ACC4;
+    border-radius: 15px;
+
+    gap: 0;
+
+    justify-self: center;
+
+
+    margin-left: 25%;
+
+}
+
+.caixas{
+    grid-area: checkbox;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem
+}
+
+.nomes {
+    grid-area: "nomes";
+    display: flex;
+    flex-direction: column;
+    gap: 2rem
+}
+
+
+.redes{
+    grid-area: "redes";
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    gap: 2rem
+}
+
+.redes img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+textarea{
+    width: 77%;
+    height: 12rem;
+    font-family: Poetsen_one;
+    font-size: 1.2rem;
+    text-align: justify;
+    background-color: #91ACC4;
+    border-radius: 15px;
+}
+
+#button{
+    display: flex;
+    justify-content: end;
+    height: 3rem;
+}
+
+#button input {
+    border: none;
+    width: 25%;
+    border-radius: 14px;
+    font-family: Poetsen_one;
+    font-size: 1.4rem;
+    color: #FF7518;
+    background-color: rgba(54, 69, 79, 1);
+
+}
+
+
+#button input:hover{
+    background-color: #91ACC4;
+    cursor: pointer;
+}
+
+
+footer{
+    margin-top: 2rem;
+    grid-area: "footer";
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(54, 69, 79, 1);
+    color: #FFFDD0;
+    margin-bottom: -2rem;
+    border-radius: 35px;
+
+}
+
+footer a{
+    text-decoration: none;
+    color: #FFFDD0;
+    
+}
+
+
+
+
+
+
+
