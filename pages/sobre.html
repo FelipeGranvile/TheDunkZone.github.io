@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/sobre.css">
+    <style>
+        body {
+            z-index: 2;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            overflow-x: hidden;
+        }
+
+        body::before{
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("../assets/images/2300.jpg");
+            background-repeat: repeat-y;
+            background-position: center;
+            background-size: 100% 100%;
+            filter: blur(40px);
+            z-index: -1; /* Coloca o background atrás do conteúdo */
+        }
+
+
+        #chose{
+            color: #FF7518;
+            text-shadow:
+             -3px -3px 0px #000,
+             -3px -2px 0px #000,
+             -3px -1px 0px #000,
+             -3px 0px 0px #000,
+             -3px 1px 0px #000,
+             -3px 2px 0px #000,
+             -3px 3px 0px #000,
+             -2px -3px 0px #000,
+             -2px -2px 0px #000,
+             -2px -1px 0px #000,
+             -2px 0px 0px #000,
+             -2px 1px 0px #000,
+             -2px 2px 0px #000,
+             -2px 3px 0px #000,
+             -1px -3px 0px #000,
+             -1px -2px 0px #000,
+             -1px -1px 0px #000,
+             -1px 0px 0px #000,
+             -1px 1px 0px #000,
+             -1px 2px 0px #000,
+             -1px 3px 0px #000,
+             0px -3px 0px #000,
+             0px -2px 0px #000,
+             0px -1px 0px #000,
+             0px 0px 0px #000,
+             0px 1px 0px #000,
+             0px 2px 0px #000,
+             0px 3px 0px #000,
+             1px -3px 0px #000,
+             1px -2px 0px #000,
+             1px -1px 0px #000,
+             1px 0px 0px #000,
+             1px 1px 0px #000,
+             1px 2px 0px #000,
+             1px 3px 0px #000,
+             2px -3px 0px #000,
+             2px -2px 0px #000,
+             2px -1px 0px #000,
+             2px 0px 0px #000,
+             2px 1px 0px #000,
+             2px 2px 0px #000,
+             2px 3px 0px #000,
+             3px -3px 0px #000,
+             3px -2px 0px #000,
+             3px -1px 0px #000,
+             3px 0px 0px #000,
+             3px 1px 0px #000,
+             3px 2px 0px #000,
+             3px 3px 0px #000;
+             font-size: 3rem;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="background">
+        <div id="container">
+
+            <header>
+                <nav class="nav-bar">
+                    <div class="options"><a href="../index.html">Home</a></li></div>
+                    <div class="options"><a href="contato.html">Contato</a></div>
+                    <div class="options"><a href="sobre.html" id="chose">Sobre</a></div>
+                    <div class="options"><a href="servicos.html">Servicos</a></div>
+                    <div class="options"><a href="noticias.html">Noticias</a></div>
+                    <div class="options"><a href="galeria.html">Galeria</a></div>
+                </nav>
+            </header>
+
+
+            <div class="historia">
+                <h1>História</h1>
+                <p style="color: whitesmoke;">O site nasceu da paixão de um grupo de amigos pela NBA, que sempre se reunia para discutir jogos, stats e curiosidades. Percebendo a falta de uma centralizada 
+                    de informações confiáveis e atualizadas, decidiram criar um espaço onde fãs pudessem
+                     acessar tudo sobre a liga: notícias, análises, e perfis dos jogadores. Assim, transformaram 
+                    sua paixão em um projeto colaborativo, unindo a comunidade e compartilhando o amor 
+                    pelo basquete.</p>
+            </div>
+
+            <div class="equipe">
+                <h1>Nossa Equipe</h1>
+                <div class="pessoa" style="color: whitesmoke;">
+                    <h2>Júlio Silva – Jornalista</h2>
+                    <p class="descricao">Júlio sempre sonhou em ser jornalista esportivo. Desde pequeno, passava horas assistindo a jogos da NBA com seu pai. Formado em Comunicação, ele traz análises 
+                        profundas e coberturas das principais notícias da liga.
+                    </p>
+                    <div class="imagens">
+                        <img src="../assets/images/Instagram (2).png" alt="simbolo do Instagram" width="50px">
+                        <img src="../assets/images/Email.png" alt="simbolo do Email" width="50px">
+                        <img src="../assets/images/WhatsApp.png" alt="simbolo do WhatsApp" width="50px">
+                    </div>
+                    <div class="redes">
+                        <p>@juliosilva</p>
+                        <p>juliosilva@dunkzone.br</p>
+                        <p>169993765</p>
+                    </div>
+
+                </div>
+                <div class="pessoa" style="color: whitesmoke;">
+                    <h2>Fernando Costa – Narrador</h2>
+                    <p class="descricao">Fernando cresceu jogando basquete e sempre teve uma voz marcante. 
+                        Com experiência em rádio, ele usa seu talento para narrar jogos e criar uma conexão 
+                        emocional com os fãs. Seu entusiasmo torna cada relato uma experiência única.
+                    </p>
+                    <div class="imagens">
+                        <img src="../assets/images/Instagram (2).png" alt="simbolo do Instagram" width="50px">
+                        <img src="../assets/images/Email.png" alt="simbolo do Email" width="50px">
+                        <img src="../assets/images/WhatsApp.png" alt="simbolo do WhatsApp" width="50px">
+                    </div>
+                    <div class="redes">
+                        <p>@fcosta</p>
+                        <p>fcosta@dunkzone.br</p>
+                        <p>1698369189</p>
+                    </div>
+
+                </div>
+
+                <div class="pessoa" style="color: whitesmoke;">
+                    <h2>Júlio Silva – Jornalista</h2>
+                    <p class="descricao">Júlio sempre sonhou em ser jornalista esportivo. Desde pequeno, passava horas assistindo a jogos da NBA com seu pai. Formado em Comunicação, ele traz análises 
+                        profundas e coberturas das principais notícias da liga.
+                    </p>
+                    <div class="imagens">
+                        <img src="../assets/images/Instagram (2).png" alt="simbolo do Instagram" width="50px">
+                        <img src="../assets/images/Email.png" alt="simbolo do Email" width="50px">
+                        <img src="../assets/images/WhatsApp.png" alt="simbolo do WhatsApp" width="50px">
+                    </div>
+                    <div class="redes">
+                        <p>@juliosilva</p>
+                        <p>juliosilva@dunkzone.br</p>
+                        <p>169993765</p>
+                    </div>
+
+                </div>
+
+                <div class="pessoa" style="color: whitesmoke;">
+                    <h2>Carlos Mendes - Editor</h2>
+                    <p class="descricao">Carlos, um verdadeiro nerd do basquete, 
+                        começou editando vídeos de highlights. Formado em Produção Audiovisual, 
+                        ele garante que cada conteúdo tenha qualidade e seja visualmente atraente, 
+                        dando vida às histórias que contamos.
+                    </p>
+                    <div class="imagens">
+                        <img src="../assets/images/Instagram (2).png" alt="simbolo do Instagram" width="50px">
+                        <img src="../assets/images/Email.png" alt="simbolo do Email" width="50px">
+                        <img src="../assets/images/WhatsApp.png" alt="simbolo do WhatsApp" width="50px">
+                    </div>
+                    <div class="redes">
+                        <p>@clmends</p>
+                        <p>cmendes@dunkzone.br</p>
+                        <p>1698492321</p>
+                    </div>
+
+                </div>
+
+                <div class="pessoa" style="color: whitesmoke;">
+                    <h2> Lucas Almeida – Front-End</h2>
+                    <p class="descricao">Lucas sempre foi fascinado por tecnologia e design. 
+                        Desde pequeno, desenvolvia sites para times de basquete da escola. 
+                        Formado em Engenharia da Computação, 
+                        ele cria uma interface dinâmica e amigável para o site.
+                    </p>
+                    <div class="imagens">
+                        <img src="../assets/images/Instagram (2).png" alt="simbolo do Instagram" width="50px">
+                        <img src="../assets/images/Email.png" alt="simbolo do Email" width="50px">
+                        <img src="../assets/images/WhatsApp.png" alt="simbolo do WhatsApp" width="50px">
+                    </div>
+                    <div class="redes">
+                        <p>@LdevFront</p>
+                        <p>Lalmeida@dunkzone.br</p>
+                        <p>1699875638</p>
+                    </div>
+
+                </div>
+
+                <div class="pessoa" style="color: whitesmoke;">
+                    <h2>Marcos Santos –  Back-End</h2>
+                    <p class="descricao">Marcos, apaixonado por algoritmos e eficiência, 
+                        começou a programar para otimizar sistemas de estatísticas de seu time local. 
+                        Com formação em Ciência da Computação, ele cuida da estrutura interna do site, 
+                        garantindo que tudo funcione perfeitamente.
+                    </p>
+                    <div class="imagens">
+                        <img src="../assets/images/Instagram (2).png" alt="simbolo do Instagram" width="50px">
+                        <img src="../assets/images/Email.png" alt="simbolo do Email" width="50px">
+                        <img src="../assets/images/WhatsApp.png" alt="simbolo do WhatsApp" width="50px">
+                    </div>
+                    <div class="redes" style="margin-bottom: 2rem;">
+                        <p>@MarcosDev</p>
+                        <p>MSantos@dunkzone.br</p>
+                        <p>1699777563</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <footer class="footer">
+                <p><a href="/pages/contato.html">Contato</a></p>
+                <p>&copy; 2024 The Dunk Zone. Todos os direitos reservados</p>
+                <p><a href="/pages/sobre.html">Sobre nós</a></p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

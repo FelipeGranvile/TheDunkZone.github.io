@@ -1,0 +1,289 @@
+@font-face {
+    font-family: Protest_revolution;
+    src: url("../assets/fonts/Protest_Revolution/Protest_Revolution/ProtestRevolution-Regular.ttf");
+}
+
+@font-face {
+    font-family: Poller_one;
+    src: url("../assets/fonts/Poller_One/PollerOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: Poetsen_one;
+    src: url("../assets/fonts/Poetsen_One/Poetsen_One/PoetsenOne-Regular.ttf");
+}
+
+:root{
+
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    :root {
+      font-size: 7px;
+    }
+}
+
+#container{
+    z-index: 2;
+    font-family: Poetsen_one;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "historia"
+    "equipe"
+    "footer";
+
+    grid-template-columns: 80%;
+    grid-template-rows: 10vh 1fr 1fr 1fr; /* aumentar o tamanho do header */
+
+    height: 95vh;
+    justify-content: center;
+    gap: 10px;
+}
+
+header {
+    z-index: 2;
+    grid-area: header;
+    justify-content: center;
+    background-color: rgba(54, 69, 79, 0.9);
+    border-radius: 1.4rem;
+    margin-top: 1rem;
+    color: #f4f4f4;
+    filter: drop-shadow(0 6px 10px black);
+}
+
+header::before{
+    content: " ";
+    width: 10px;
+    position: absolute;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-left: 8%;
+    transform: translateY(-20px);
+}
+header::after{
+    margin-left: 90%;
+    content: " ";
+    width: 10px;
+    position: absolute;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: translateY(-5.7rem);  
+}
+
+@media (max-width: 768px){
+    header::after{
+        height: 1.4rem;
+    }
+}
+.nav-bar{
+    font-size: 200%;
+    display: grid; /* mudar de display: contents para display: grid */
+    grid-template-columns: repeat(6, 1fr); /* create 6 columns with equal width */
+    grid-auto-columns: 1fr; /* manter a largura das colunas */
+    justify-items: center; /* centralizar os elementos .options */
+    align-items: center; /* centralizar os elementos .options verticalmente */
+}
+
+.options{
+    transition: all 0.7s ease-in-out;
+    display: grid; /* make each option a grid cell */
+    justify-items: center; /* center the text within each cell */
+    margin-top: 0.8rem;
+}
+
+.options a{
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+
+#chose:hover{
+    transform: translateY(-3px);
+    animation: pulse 2s infinite;
+}
+
+.options:hover{
+    transform: translateY(-3px); /* faça a div subir um pouco */
+    font-size: 1.1em; /* aumente o tamanho do texto */
+    border: 3px solid orange; /* adicione uma borda laranja */
+    animation: pulse 2s infinite; /* adicione uma animação de pulsação */
+}
+
+.historia{
+    z-index: 2;
+    grid-area: historia;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 35px;
+    margin-bottom: 2rem;
+    
+
+
+    width: 50%;
+    justify-self: center;
+    justify-content: flex-start;
+    margin-top: 2rem;
+
+
+
+    background: rgba(54, 69, 79, 0.69);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.8px);
+    -webkit-backdrop-filter: blur(9.8px);
+    border: 1px solid rgba(54, 69, 79, 0.25);
+
+
+    box-shadow: 1px 1px 89px -2px rgba(0,0,0,0.76);
+    -webkit-box-shadow: 1px 1px 89px -2px rgba(0,0,0,0.76);
+    -moz-box-shadow: 1px 1px 89px -2px rgba(0,0,0,0.76);    
+
+}
+
+.historia h1{
+    font-family: Protest_revolution;
+    color: #FF7518;
+    font-size: 4rem;
+    text-shadow: rgb(0, 0, 0) 4px 0px 0px, rgb(0, 0, 0) 3.87565px 0.989616px 0px, rgb(0, 0, 0) 3.51033px 1.9177px 0px, rgb(0, 0, 0) 2.92676px 2.72656px 0px, rgb(0, 0, 0) 2.16121px 3.36588px 0px, rgb(0, 0, 0) 1.26129px 3.79594px 0px, rgb(0, 0, 0) 0.282949px 3.98998px 0px, rgb(0, 0, 0) -0.712984px 3.93594px 0px, rgb(0, 0, 0) -1.66459px 3.63719px 0px, rgb(0, 0, 0) -2.51269px 3.11229px 0px, rgb(0, 0, 0) -3.20457px 2.39389px 0px, rgb(0, 0, 0) -3.69721px 1.52664px 0px, rgb(0, 0, 0) -3.95997px 0.56448px 0px, rgb(0, 0, 0) -3.97652px -0.432781px 0px, rgb(0, 0, 0) -3.74583px -1.40313px 0px, rgb(0, 0, 0) -3.28224px -2.28625px 0px, rgb(0, 0, 0) -2.61457px -3.02721px 0px, rgb(0, 0, 0) -1.78435px -3.57996px 0px, rgb(0, 0, 0) -0.843183px -3.91012px 0px, rgb(0, 0, 0) 0.150409px -3.99717px 0px, rgb(0, 0, 0) 1.13465px -3.8357px 0px, rgb(0, 0, 0) 2.04834px -3.43574px 0px, rgb(0, 0, 0) 2.83468px -2.82216px 0px, rgb(0, 0, 0) 3.44477px -2.03312px 0px, rgb(0, 0, 0) 3.84068px -1.11766px 0px, rgb(0, 0, 0) 3.9978px -0.132717px 0px;
+
+}
+
+.historia p{
+    font-family: Poetsen_one;
+    width: 90%;
+    font-size: 2rem;
+
+    
+
+}
+
+
+.equipe{
+    all: unset;
+    z-index: 2;
+    grid-area: equipe;
+    display: grid;
+
+    grid-template-columns: 80%;
+    grid-template-rows: repeat(7, auto);
+
+    justify-content: center;
+    width: 50%;
+    justify-self: center;
+
+
+    background: rgba(54, 69, 79, 0.69);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.8px);
+    -webkit-backdrop-filter: blur(9.8px);
+    border: 1px solid rgba(54, 69, 79, 0.25);
+
+    
+    box-shadow: -2px 32px 58px -14px rgba(0,0,0,0.64);
+    -webkit-box-shadow: -2px 32px 58px -14px rgba(0,0,0,0.64);
+    -moz-box-shadow: -2px 32px 58px -14px rgba(0,0,0,0.64);
+}
+
+.equipe h1{
+    font-family: Protest_revolution;
+    color: #FF7518;
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: rgb(0, 0, 0) 4px 0px 0px, rgb(0, 0, 0) 3.87565px 0.989616px 0px, rgb(0, 0, 0) 3.51033px 1.9177px 0px, rgb(0, 0, 0) 2.92676px 2.72656px 0px, rgb(0, 0, 0) 2.16121px 3.36588px 0px, rgb(0, 0, 0) 1.26129px 3.79594px 0px, rgb(0, 0, 0) 0.282949px 3.98998px 0px, rgb(0, 0, 0) -0.712984px 3.93594px 0px, rgb(0, 0, 0) -1.66459px 3.63719px 0px, rgb(0, 0, 0) -2.51269px 3.11229px 0px, rgb(0, 0, 0) -3.20457px 2.39389px 0px, rgb(0, 0, 0) -3.69721px 1.52664px 0px, rgb(0, 0, 0) -3.95997px 0.56448px 0px, rgb(0, 0, 0) -3.97652px -0.432781px 0px, rgb(0, 0, 0) -3.74583px -1.40313px 0px, rgb(0, 0, 0) -3.28224px -2.28625px 0px, rgb(0, 0, 0) -2.61457px -3.02721px 0px, rgb(0, 0, 0) -1.78435px -3.57996px 0px, rgb(0, 0, 0) -0.843183px -3.91012px 0px, rgb(0, 0, 0) 0.150409px -3.99717px 0px, rgb(0, 0, 0) 1.13465px -3.8357px 0px, rgb(0, 0, 0) 2.04834px -3.43574px 0px, rgb(0, 0, 0) 2.83468px -2.82216px 0px, rgb(0, 0, 0) 3.44477px -2.03312px 0px, rgb(0, 0, 0) 3.84068px -1.11766px 0px, rgb(0, 0, 0) 3.9978px -0.132717px 0px;
+}
+
+
+
+
+
+.pessoa{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "nome"
+    "descricao"
+    "imagens"
+    "redes";
+    grid-template-rows: repeat(4, auto);
+    grid-auto-columns: 1fr;
+   justify-content: space-evenly;
+   gap: 10px;
+}
+
+.pessoa h2{
+    grid-area: nome;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: Poetsen_one;
+    font-size: 2rem;
+}
+
+.descricao{
+    grid-area: descricao;
+    display: flex;
+    flex-direction: row;
+
+    font-family:Poetsen_one;
+    font-size: 1.3rem;
+}
+
+
+.imagens{
+    grid-area: imagens;
+    display: flex; /* Mudei para flex */
+    justify-content: center; /* Centraliza as imagens */
+     /* Espaçamento entre as imagens */
+}
+
+.pessoa img{
+    max-width: 100%; /* Para garantir que as imagens não ultrapassem o limite */
+    height: auto; /* Mantém a proporção das imagens */
+    margin: 0 4.7rem
+    
+}
+
+.redes{
+    grid-area: redes;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 8rem;
+}
+
+footer{
+    margin-top: 2rem;
+    grid-area: "footer";
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(54, 69, 79, 1);
+    color: #FFFDD0;
+    margin-bottom: -2rem;
+    border-radius: 35px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #FFFDD0;
+    
+}
+
+
+
+
+
+
+@keyframes pulse {
+    0% {
+      border-color: orange;
+    }
+    50% {
+      border-color: #2D5C7E
+    }
+    100% {
+      border-color: orange;
+    }
+}
