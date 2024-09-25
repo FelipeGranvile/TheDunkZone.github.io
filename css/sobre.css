@@ -1,5 +1,19 @@
+@font-face {
+    font-family: Protest_revolution;
+    src: url("assets/fonts/Protest_Revolution/Protest_Revolution/ProtestRevolution-Regular.ttf");
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Poller+One&family=Protest+Revolution&display=swap');
+@font-face {
+    font-family: Poller_one;
+    src: url("assets/fonts/Poller_One/PollerOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: Poetsen_one;
+    src: url("assets/fonts/Poetsen_One/Poetsen_One/PoetsenOne-Regular.ttf");
+}
+
+
 
 :root{
 
@@ -34,7 +48,7 @@ header {
     z-index: 2;
     grid-area: header;
     justify-content: center;
-    background-color: whitesmoke;
+    background-color: rgba(54, 69, 79, 0.9);
     border-radius: 1.4rem;
     margin-top: 1rem;
     color: #f4f4f4;
