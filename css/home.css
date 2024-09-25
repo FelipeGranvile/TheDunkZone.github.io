@@ -1,16 +1,16 @@
 @font-face {
     font-family: Protest_revolution;
-    src: url("/assets/fonts/Protest_Revolution/Protest_Revolution/ProtestRevolution-Regular.ttf");
+    src: url("assets/fonts/Protest_Revolution/Protest_Revolution/ProtestRevolution-Regular.ttf");
 }
 
 @font-face {
     font-family: Poller_one;
-    src: url("/assets/fonts/Poller_One/PollerOne-Regular.ttf");
+    src: url("assets/fonts/Poller_One/PollerOne-Regular.ttf");
 }
 
 @font-face {
     font-family: Poetsen_one;
-    src: url("/assets/fonts/Poetsen_One/Poetsen_One/PoetsenOne-Regular.ttf");
+    src: url("assets/fonts/Poetsen_One/Poetsen_One/PoetsenOne-Regular.ttf");
 }
 
 
