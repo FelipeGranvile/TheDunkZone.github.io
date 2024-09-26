@@ -200,7 +200,7 @@ header::after{
 }
 
 #button{
-    
+    background-color: #FF7518;
     text-align: center;
     color: #000000;
     border-radius: 35px;
@@ -212,13 +212,14 @@ header::after{
 
 #button:hover{
     cursor: pointer;
+    color: whitesmoke;
+    background-color: rgba(54, 69, 79, 1);
 }
 
 #button a{
     margin: unset;
     text-decoration: none;
     color: inherit;
-    color: #000000;
 }
 
 footer{

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/contato.css">
+
+    
+
+    <style>
+        body {
+            z-index: 2;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            overflow-x: hidden;
+        }
+
+        body::before{
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("../assets/images/2300.jpg");
+            background-repeat: repeat-y;
+            background-position: center;
+            background-size: 100% 100%;
+            filter: blur(40px);
+            z-index: -1; /* Coloca o background atrás do conteúdo */
+        }
+
+
+        #chose{
+            color: #FF7518;
+            text-shadow:
+             -3px -3px 0px #000,
+             -3px -2px 0px #000,
+             -3px -1px 0px #000,
+             -3px 0px 0px #000,
+             -3px 1px 0px #000,
+             -3px 2px 0px #000,
+             -3px 3px 0px #000,
+             -2px -3px 0px #000,
+             -2px -2px 0px #000,
+             -2px -1px 0px #000,
+             -2px 0px 0px #000,
+             -2px 1px 0px #000,
+             -2px 2px 0px #000,
+             -2px 3px 0px #000,
+             -1px -3px 0px #000,
+             -1px -2px 0px #000,
+             -1px -1px 0px #000,
+             -1px 0px 0px #000,
+             -1px 1px 0px #000,
+             -1px 2px 0px #000,
+             -1px 3px 0px #000,
+             0px -3px 0px #000,
+             0px -2px 0px #000,
+             0px -1px 0px #000,
+             0px 0px 0px #000,
+             0px 1px 0px #000,
+             0px 2px 0px #000,
+             0px 3px 0px #000,
+             1px -3px 0px #000,
+             1px -2px 0px #000,
+             1px -1px 0px #000,
+             1px 0px 0px #000,
+             1px 1px 0px #000,
+             1px 2px 0px #000,
+             1px 3px 0px #000,
+             2px -3px 0px #000,
+             2px -2px 0px #000,
+             2px -1px 0px #000,
+             2px 0px 0px #000,
+             2px 1px 0px #000,
+             2px 2px 0px #000,
+             2px 3px 0px #000,
+             3px -3px 0px #000,
+             3px -2px 0px #000,
+             3px -1px 0px #000,
+             3px 0px 0px #000,
+             3px 1px 0px #000,
+             3px 2px 0px #000,
+             3px 3px 0px #000;
+             font-size: 3rem;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <header>
+            <nav class="nav-bar">
+                <div class="options"><a href="../index.html">Home</a></li></div>
+                <div class="options" ><a href="contato.html">Contato</a></div>
+                <div class="options"><a href="sobre.html" >Sobre</a></div>
+                <div class="options"><a href="servicos.html"  id="chose">Servicos</a></div>
+                <div class="options"><a href="noticias.html">Noticias</a></div>
+                <div class="options"><a href="galeria.html">Galeria</a></div>
+            </nav>
+        </header>        
+
+
+        
+
+        <footer class="footer">
+            <p><a href="/pages/contato.html">Contato</a></p>
+            <p>&copy; 2024 The Dunk Zone. Todos os direitos reservados</p>
+            <p><a href="/pages/sobre.html">Sobre nós</a></p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('telefone').addEventListener('input', function (e) {
+            let value = e.target.value
+            .replace(/\D/g, '') // Remove caracteres não numéricos
+            .replace(/^(\d{2})(\d)/, '($1) $2') // Formata DDD
+            .replace(/(\d)(\d{4})$/, '$1-$2'); // Adiciona o hífen
+
+            e.target.value = value;
+        });
+
+    </script>
+</body>
+</html>
