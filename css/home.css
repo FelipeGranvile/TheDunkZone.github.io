@@ -106,7 +106,7 @@ header::after{
     }
 }
 .nav-bar{
-    font-family: Poetsen_one;
+    font-family: Protest_revolution;
     font-size: 200%;
     display: grid; /* mudar de display: contents para display: grid */
     grid-template-columns: repeat(6, 1fr); /* create 6 columns with equal width */
@@ -116,7 +116,7 @@ header::after{
 }
 
 .options{
-    font-family: Poetsen_one;
+    font-family: Protest_revolution;
     transition: all 0.7s ease-in-out;
     display: grid; /* make each option a grid cell */
     justify-items: center; /* center the text within each cell */
@@ -124,14 +124,13 @@ header::after{
 }
 
 .options a{
-    font-family: Poetsen_one;
+    font-family: Protest_revolution;
     text-decoration: none;
     color: #f4f4f4;
 }
 
 
 #chose:hover{
-    font-family: Poetsen_one;
     transform: translateY(-3px);
     animation: pulse 2s infinite;
 }
