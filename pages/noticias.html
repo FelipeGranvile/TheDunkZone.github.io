@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/noticias.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <style>
+        body {
+            z-index: 2;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            overflow-x: hidden;
+        }
+
+        body::before{
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("../assets/images/background.jpg");
+            background-repeat: repeat-y;
+            background-position: center;
+            background-size: 100% 100%;
+            filter: blur(40px);
+            z-index: -1; /* Coloca o background atrás do conteúdo */
+        }
+
+
+        #chose{
+            color: #FF7518;
+            text-shadow:
+             -3px -3px 0px #000,
+             -3px -2px 0px #000,
+             -3px -1px 0px #000,
+             -3px 0px 0px #000,
+             -3px 1px 0px #000,
+             -3px 2px 0px #000,
+             -3px 3px 0px #000,
+             -2px -3px 0px #000,
+             -2px -2px 0px #000,
+             -2px -1px 0px #000,
+             -2px 0px 0px #000,
+             -2px 1px 0px #000,
+             -2px 2px 0px #000,
+             -2px 3px 0px #000,
+             -1px -3px 0px #000,
+             -1px -2px 0px #000,
+             -1px -1px 0px #000,
+             -1px 0px 0px #000,
+             -1px 1px 0px #000,
+             -1px 2px 0px #000,
+             -1px 3px 0px #000,
+             0px -3px 0px #000,
+             0px -2px 0px #000,
+             0px -1px 0px #000,
+             0px 0px 0px #000,
+             0px 1px 0px #000,
+             0px 2px 0px #000,
+             0px 3px 0px #000,
+             1px -3px 0px #000,
+             1px -2px 0px #000,
+             1px -1px 0px #000,
+             1px 0px 0px #000,
+             1px 1px 0px #000,
+             1px 2px 0px #000,
+             1px 3px 0px #000,
+             2px -3px 0px #000,
+             2px -2px 0px #000,
+             2px -1px 0px #000,
+             2px 0px 0px #000,
+             2px 1px 0px #000,
+             2px 2px 0px #000,
+             2px 3px 0px #000,
+             3px -3px 0px #000,
+             3px -2px 0px #000,
+             3px -1px 0px #000,
+             3px 0px 0px #000,
+             3px 1px 0px #000,
+             3px 2px 0px #000,
+             3px 3px 0px #000;
+             font-size: 3rem;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="background">
+        <div id="container">
+
+            <header>
+                <nav class="nav-bar">
+                    <div class="options"><a href="../index.html">Home</a></li></div>
+                    <div class="options"><a href="contato.html">Contato</a></div>
+                    <div class="options"><a href="sobre.html">Sobre</a></div>
+                    <div class="options"><a href="servicos.html">Servicos</a></div>
+                    <div class="options"><a href="noticias.html" id="chose">Noticias</a></div>
+                    <div class="options"><a href="galeria.html">Galeria</a></div>
+                </nav>
+            </header>
+
+            <div class="noticia-principal">
+                <h1 style="color: #FF7518; font-size: 4rem;">Noticia de destaque: </h1>
+                <h3>
+                    Knicks e Timberwolves fecham 'megatroca' com Julius Randle e Karl-Anthony Towns
+                </h3>
+                <img src="../assets/images/noticias/kat.jpg" alt="towns-randle">
+                <p>O New York Knicks e o Minnesota Timberwolves estão finalizando uma troca envolvendo Julius Randle e 
+                    Karl-Anthony Towns. A notícia foi trazida pelo “The Athletic” e apurada pela ESPN na última sexta-feira (27).
+                </p>
+                <p>
+                    O acordo faria com que Randle e Donte DiVincenzo terminassem em Minnesota e Towns em Nova York. 
+                    Os Knicks querem um pivô para reforçar sua maior fraqueza, enquanto os Timberwolves estão de olho 
+                    em arremessos melhores e mais versatilidade em sua busca rumo às finais da Conferência Oeste.
+                </p>
+                <a href="https://www.nba.com/news/karl-anthony-towns-trade-knicks-timberwolves">Clique aqui para saber mais detalhes sobre a troca</a>
+            </div>
+
+            <div class="noticias-secundarias">
+                <h1>Noticias Gerais</h1>
+                <div class="noticia" id="noticia01">
+                    <h3> San Antonio Spurs aposta em Chris Paul para facilitar a vida de Wembanyama</h3>
+                    <img src="../assets/images/noticias/vitor-wembayama.jpg" alt="vitor-wembayama-CP3">
+                    <p>
+                        Victor Wembanyama tem agora a companhia de Chris Paul no San Antonio Spurs. 
+                        Quanto será que essa mescla de juventude e experiência pode alavancar o desempenho do time, 
+                        que foi o penúltimo colocado da Conferência Oeste na última temporada da NBA?
+                    </p>
+                    <p>
+                        Ainda não dá para dizer que existe uma pressão nos Spurs por muito mais vitórias e 
+                        por briga por vaga nos playoffs, mas as movimentações que foram feitas para a temporada 2024/25 
+                        sugerem que uma boa evolução é esperada. As chegadas de Chris Paul e Harrison Barnes sugerem uma certa pressa 
+                        em colocar mais talento e gente provada ao redor de Victor Wembanyama para ver o comportamento dele nessas situações. 
+                        Se em meio a uma equipe crua ele já brilhou como novato, a expectativa é que agora ele seja capaz de voar mais alto.
+                    </p>
+                    <a href="https://www.espn.com.br/nba/artigo/_/id/14230429/nba-san-antonio-spurs-aposta-em-chris-paul-para-facilitar-a-vida-de-wembanyama">Clique aqui para saber mais detalhes</a>
+                </div>
+
+                <div class="noticia" id="noticia02">
+                    <h3>MVP mais jovem da história na NBA, Derrick Rose anuncia aposentadoria: 'Dei tudo de mim'</h3>
+                    <img src="../assets/images/noticias/derrickrose.jpg" alt="rose">
+                    <p>
+                        MVP da temporada 2010/11 da NBA pelo Chicago Bulls, Derrick Rose anunciou nesta quinta-feira (26) a aposentadoria do 
+                        basquete após uma carreira de 16 anos na liga.
+                    </p>
+                    <p>
+                        “Sabendo que dei tudo de mim ao jogo, me sinto confiante nessa decisão”, disse Rose à ESPN.
+                    </p>
+                    <p>
+                        “O basquete foi apenas o começo para mim. Agora, é importante que eu dê tudo de mim à minha família. Eles merecem isso”.
+                    </p>
+                    <a href="https://www.espn.com.br/nba/artigo/_/id/14224381/mvp-mais-jovem-da-nba-derrick-rose-anuncia-aposentadoria-dei-tudo-de-mim">Clique aqui para saber mais detalhes</a>
+                </div>
+
+                <div class="noticia" id="noticia03">
+                    <h3>O Washington Wizards e a busca por uma direção</h3>
+                    <img src="../assets/images/noticias/jordan poole.jpg" alt="poole">
+                    <p>
+                        Chegou a vez de apresentar ao fã de esportes mais um time que vem de uma campanha decepcionante e 
+                        busca se reerguer: o Washington Wizards, que tem como principal novidade no elenco um francês de 
+                        19 anos escolhido na segunda posição do Draft.
+                    </p>
+                    <p>
+                        O que aconteceu: começar uma temporada depois de negociar Bradley Beal e 
+                        Kristaps Porzingis já indicava o início de um processo de reconstrução. Mesmo sem tanta ambição, 
+                        o desempenho em quadra decepcionou. Os Wizards tiveram a pior campanha da sua história. Mais preocupante 
+                        do que o número de derrotas em si foi a constatação de que o desenvolvimento dos jovens e o nível de 
+                        competitividade do time estavam deixando a desejar. O que culminou na demissão do treinador Wes Unseld Jr 
+                        ainda na metade do campeonato.
+                    </p>
+                    <a href="https://www.espn.com.br/nba/artigo/_/id/14218229/nba-washington-wizards-e-a-busca-por-uma-direcao">Clique aqui para saber mais detalhes</a>
+                </div>
+
+                <div class="noticia" id="noticia04">
+                    <h3>Estrela dos Knicks abre mão de R$ 613 milhões para time conseguir contratar reforços</h3>
+                    <img src="../assets/images/noticias/jallen-brunson.jpg" alt="brunson">
+                    <p>
+                        Em um movimento sem precedentes, Jalen Brunson abrirá mão de U$ 113 milhões (R$ 613 milhões) 
+                        para que o New York Knicks tenha espaço de salário o suficiente para melhorar a equipe.
+                    </p>
+                    <p>
+                        Segundo fontes disseram à ESPN, o armador assinou uma renovação de U$ 156,5 milhões (R$ 850 milhões) 
+                        em quatro anos nesta sexta-feira (12). Caso esperasse até a temporada que vem, Brunson poderia assinar 
+                        um contrato de U$ 269 milhões (R$ 1,4 bilhão) em cinco anos.
+                    </p>
+
+                    <a href="https://www.espn.com.br/nba/artigo/_/id/13902584/estrela-dos-knicks-abre-mao-de-r-613-milhoes-para-time-conseguir-contratar-reforcos">Clique aqui para saber mais detalhes</a>
+                </div>
+            </div>
+
+
+           
+            <footer class="footer">
+                <p><a href="/pages/contato.html">Contato</a></p>
+                <p>&copy; 2024 The Dunk Zone. Todos os direitos reservados</p>
+                <p><a href="/pages/sobre.html">Sobre nós</a></p>
+            </footer>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
